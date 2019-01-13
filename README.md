@@ -7,7 +7,9 @@
 
 ## Usage
 
-Before using Restica,  be sure to either supply your password with the included password.txt file, which can be found at resources/app/password.txt, or include it in the command box when you run a command. By default, the "Initialise", "Backup" and "Restore" button assume you are using the included password.txt file.
+Before using Restica,  be sure to either supply your password with the included password.txt file, which can be found at resources/app/password.txt, or include it in the command box when you run a command. By default, the "Initialise", "Backup" and "Restore" buttons assume you are using the included password.txt file.
+
+Once you have supplied your password via the password.txt file, you can start the program and use the "Initialise" button, which will make the "repo" folder, which is the default [Restic](https://github.com/restic/restic) repository folder.
 
 Restica has three main functions. 
 
