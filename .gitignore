@@ -4,6 +4,8 @@ keys
 snapshots
 locks
 index
-Restica-win32-x64
+Restica*
 config
 password.txt
+.zip
+.7z
