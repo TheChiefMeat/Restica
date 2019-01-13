@@ -1,0 +1,9 @@
+node_modules
+data
+keys
+snapshots
+locks
+index
+Restica-win32-x64
+config
+password.txt

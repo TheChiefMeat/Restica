@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Restica</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean">
+            <div class="container">
+                <a class="navbar-brand" href="#">Restica<br></a>
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item" id="button1" role="presentation" onclick="init()"><a class="nav-link active" href="#" id="init">Initialise</a></li>
+                    </ul>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"><input type="search" style="width: 100%;" id="searchTxt" name="searchTxt"></div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                <button class="btn btn-primary" type="button" id="button2" style="margin: 0px 5px 0px 0px;" onclick="backup()">Backup</button>
+                <button class="btn btn-primary" type="button" id="restore" style="margin: 10px 0px ;" onclick="restore()">Restore</button>
+                <button class="btn btn-primary" type="button" id="run" style="margin: 10px 5px ;" onclick="run()">Run Command</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <code id="myLog" style="font-size: 14px; color: #b3b3b3; word-break: break-word;">Terminal Output...</code> 
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script>
+      require ('./renderer.js');
+    </script>
+</body>
+
+</html>
