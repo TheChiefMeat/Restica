@@ -2,6 +2,9 @@
 
 **A Minimal Restic GUI.**
 
+![Restica preview image](https://raw.githubusercontent.com/TheChiefMeat/Restica/master/img/preview.png)
+
+
 ## Usage
 
 Before using Restica,  be sure to either supply your password with the included password.txt file, which can be found at resources/app/password.txt, or include it in the command box when you run a command. By default, the "Initialise", "Backup" and "Restore" button assume you are using the included password.txt file.
