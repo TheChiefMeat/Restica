@@ -9,7 +9,7 @@ let mainWindow
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 400, height: 300, minHeight: 300, minWidth:400, icon:__dirname+'/img/icon.png', frame: true});
+  mainWindow = new BrowserWindow({width: 400, height: 300, minHeight: 300, minWidth:400, icon:__dirname+'/assets/img/icon.png', frame: true});
 
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
