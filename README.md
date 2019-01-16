@@ -2,7 +2,7 @@
 
 **A Minimal Restic GUI.**
 
-![Restica preview image](https://raw.githubusercontent.com/TheChiefMeat/Restica/master/img/preview.png)
+![Restica preview image](https://raw.githubusercontent.com/TheChiefMeat/Restica/master/assets/img/preview.png)
 
 
 ## Usage
