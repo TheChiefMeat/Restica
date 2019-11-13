@@ -20,19 +20,20 @@
  
  // This will run a basic cil command, in this case restic (assuming it is in PATH, for now, commented out)
  function init() {
-    exec('restic init --repo repo --password-file=resources/app/password.txt', Callback);
+    var input = document.getElementById("searchTxt").value;
+    exec('restic init --repo repo --password-file=' + '"' + input + '"' + "/password.txt", Callback);
 }
 
 // Backup command that will take the given path and use the password text file to back up that path
  function backup() {
     var input = document.getElementById("searchTxt").value;
-    exec('restic -r repo backup ' + '"' + input + '"' + " --password-file=resources/app/password.txt --verbose", Callback);
+    exec('restic -r repo backup ' + '"' + input + '"' + " --password-file=" + '"' + input + '"' + "/password.txt" + "--verbose", Callback);
  }
  
  //Will restore the lastest backup to the given path
  function restore() {
     var input = document.getElementById("searchTxt").value;
-    exec('restic -r repo restore latest --target ' + '"' + input + '"' + " --password-file=resources/app/password.txt --verbose", Callback);
+    exec('restic -r repo restore latest --target ' + '"' + input + '"' + " --password-file=" + '"' + input + '"' + "/password.txt" + "--verbose", Callback);
  }
 
  //Will allow you to run any restic command
