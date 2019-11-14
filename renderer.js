@@ -20,27 +20,29 @@
  
  // This will run a basic cil command, in this case restic (assuming it is in PATH, for now, commented out)
  function init() {
-    var input = document.getElementById("searchTxt").value;
-    exec('restic init --repo repo --password-file=' + '"' + input + '"' + "/password.txt", Callback);
+    var SourceFolder = document.getElementById("SourceFolder").value;
+    var BackupLocation = document.getElementById("BackupLocation").value;
+    exec('restic init --repo ' + '"' + BackupLocation + '"' + ' --password-file=' + '"' + SourceFolder + "/password.txt" + '"', Callback);
 }
 
 // Backup command that will take the given path and use the password text file to back up that path
  function backup() {
-    var input = document.getElementById("searchTxt").value;
-    exec('restic -r repo backup ' + '"' + input + '"' + " --password-file=" + '"' + input + '"' + "/password.txt" + "--verbose", Callback);
+    var SourceFolder = document.getElementById("SourceFolder").value;
+    var BackupLocation = document.getElementById("BackupLocation").value;
+    exec('restic -r ' + '"' + BackupLocation + '"' + ' backup ' + '"' + SourceFolder + '"' + ' --password-file=' + '"' + SourceFolder + "/password.txt" + '"' + " --verbose", Callback);
  }
  
  //Will restore the lastest backup to the given path
  function restore() {
-    var input = document.getElementById("searchTxt").value;
-    exec('restic -r repo restore latest --target ' + '"' + input + '"' + " --password-file=" + '"' + input + '"' + "/password.txt" + "--verbose", Callback);
+    var SourceFolder = document.getElementById("SourceFolder").value;
+    var BackupLocation = document.getElementById("BackupLocation").value;
+    exec('restic -r ' + '"' + BackupLocation + '"' + ' restore latest --target ' + '"' + SourceFolder + '"' + " --password-file=" + '"' + SourceFolder + "/password.txt" + '"' + " --verbose", Callback);
  }
 
  //Will allow you to run any restic command
  function run() {
-    var input = document.getElementById("searchTxt").value;
+    var SourceFolder = document.getElementById("SourceFolder").value;
     exec(input, Callback);
-
  }
 // custom console window command that allow output of console to a div
  window.console = {
