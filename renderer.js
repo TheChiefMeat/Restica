@@ -41,7 +41,7 @@
 
  //Will allow you to run any restic command
  function run() {
-    var SourceFolder = document.getElementById("SourceFolder").value;
+    var input = document.getElementById("SourceFolder").value;
     exec(input, Callback);
  }
 // custom console window command that allow output of console to a div
