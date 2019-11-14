@@ -4,7 +4,6 @@
 
 ![Restica preview image](https://raw.githubusercontent.com/TheChiefMeat/Restica/master/assets/img/preview.png)
 
-
 ## Usage
 
 Before using Restica, be sure to either include a password.txt file with the folder you wish to backup, or include it in the command box when you run a command. By default, the "Initialise", "Backup" and "Restore" buttons assume you are using the included password.txt file.
