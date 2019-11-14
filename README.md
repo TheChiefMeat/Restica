@@ -7,13 +7,13 @@
 
 ## Usage
 
-Before using Restica,  be sure to either supply your password with the included password.txt file, which can be found at resources/app/password.txt, or include it in the command box when you run a command. By default, the "Initialise", "Backup" and "Restore" buttons assume you are using the included password.txt file.
+Before using Restica, be sure to either include a password.txt file with the folder you wish to backup, or include it in the command box when you run a command. By default, the "Initialise", "Backup" and "Restore" buttons assume you are using the included password.txt file.
 
-Once you have supplied your password via the password.txt file, you can start the program and use the "Initialise" button, which will make the "repo" folder, which is the default [Restic](https://github.com/restic/restic) repository folder.
+Once you have supplied your password via the password.txt file, you can start the program and use the "Initialise" button.
 
 Restica has three main functions. 
 
-The "Backup" button simply backs up the folder given to it in the command box; supply any folder and Restica will back up that folder to the default repository folder (repo).
+The "Backup" button simply backs up the folder given to it in the command box; supply any folder and Restica will back up that folder to the chosen backup location.
 
 The "Restore" button simply restores the last backup to the folder given to it in the command box.
 
@@ -27,8 +27,6 @@ The "Run" button allows you to run any other [Restic](https://github.com/restic/
 Ensure that [Restic](https://github.com/restic/restic) is available in your PATH directory.
 
 Simple download the .zip file for your operating system from the [latest release page](https://github.com/TheChiefMeat/Restica/releases/latest) and unzip the program to a folder of your choice.
-
-Once unzipped, be sure to either supply your password with the included password.txt file, which can be found at resources/app/password.txt, or include it in the command box when you run a command.
 
 ## Install From Source
 
