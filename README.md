@@ -25,7 +25,7 @@ The "Run" button allows you to run any other [Restic](https://github.com/restic/
 
 Ensure that [Restic](https://github.com/restic/restic) is available in your PATH directory.
 
-Simple download the .zip file for your operating system from the [latest release page](https://github.com/TheChiefMeat/Restica/releases/latest) and unzip the program to a folder of your choice.
+Simply download the .zip file for your operating system from the [latest release page](https://github.com/TheChiefMeat/Restica/releases/latest) and unzip the program to a folder of your choice.
 
 ## Install From Source
 
